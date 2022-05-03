@@ -15,23 +15,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container header-nav">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contact list">
-                <li class="item"><a href="mailto:info@devstudio.com" title="Email" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" title="Phone number" class="link">+38 096 111 11 11</a></li>
+<!-- Шапка сайта -->
+<header class="header">
+    <div class="container header-nav">
+        <nav class="main-nav">
+            <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="contact list">
+            <li class="item"><a href="mailto:info@devstudio.com" title="Email" class="link">
+                    <svg class="contact-icon" width="16px" height="12px">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" title="Phone number" class="link"><svg class="contact-icon"
+                        width="10px" height="16px">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+    </div>
+</header>
     <main>
         <!-- Портфолио -->
         <section class="section">
@@ -56,7 +62,7 @@
                 </ul>
                 <ul class="portfolio list">
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_1.jpg" alt="Открытый ноутбук с изображением фото членов команды на экране"
                                 width="370" height="294" />
                         <div class="project-details">
@@ -67,7 +73,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_2.jpg" alt="Два баскетболиста в прыжке соревнуются за мяч" width="370"
                                 height="294" />
                             <div class="project-details">
@@ -77,7 +83,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_3.jpg"
                                 alt="Надпись The Seafood Restaurant Est. 2001 на фоне вертикального изображенной рыбы" width="370"
                                 height="294" />
@@ -88,7 +94,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_4.jpg" alt="Наушники" width="370" height="294" />
                             <div class="project-details">
                                 <h2 class="title">Проект Prime</h2>
@@ -97,7 +103,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_5.jpg" alt="Две коробки разного размера" width="370" height="294" />
                             <div class="project-details">
                                 <h2 class="title">Проект Boxes</h2>
@@ -106,7 +112,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_6.jpg" alt="iMac без клавиатуры с изображением карты мира на экране" width="370"
                                 height="294" />
                             <div class="project-details">
@@ -116,7 +122,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_7.jpg"
                                 alt="Открытый журнал с картинками и заголовком I'am Limited Edition над фото двух женщин, показывающих знак мир поднятой над головой рукой"
                                 width="370" height="294" />
@@ -127,7 +133,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_8.jpg" alt="Бирка на веревке с надписью LAB EL TAG" width="370" height="294" />
                             <div class="project-details">
                                 <h2 class="title">Проект LAB</h2>
@@ -136,7 +142,7 @@
                         </a>
                     </li>
                     <li class="project">
-                        <a href="#">
+                        <a href="#" class="project-link">
                             <img src="./images/project_9.jpg" alt="Пользователь печатает на ноутбуке" width="370" height="294" />
                             <div class="project-details">
                                 <h2 class="title">Growing Business</h2>
@@ -151,16 +157,37 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
-            <address class="address">
-                <ul class="list">
-                    <li class="footer-list-item"><a
-                            href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                            target="_blank" rel="noreferrer noopener" class="link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="footer-list-item"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li class="footer-list-item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+            <div class="contact_info">
+                <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+                <address class="address">
+                    <ul class="list">
+                        <li class="footer-list-item"><a
+                                href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                                target="_blank" rel="noreferrer noopener" class="link">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="footer-list-item"><a href="mailto:info@example.com" class="link">info@example.com</a>
+                        </li>
+                        <li class="footer-list-item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social_networks">
+                <h3 class="footer-title">присоединяйтесь</h3>
+                <ul class="social-list">
+                    <li class="social-item"><a href="" class="social-link"><svg class="social-icon social-icon-footer">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="social-item"><a href="" class="social-link"><svg class="social-icon social-icon-footer">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="social-item"><a href="" class="social-link"><svg class="social-icon social-icon-footer">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="social-item"><a href="" class="social-link"><svg class="social-icon social-icon-footer">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg></a></li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
     </body>
