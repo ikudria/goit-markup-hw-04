@@ -249,7 +249,7 @@ a[title] {
     padding-bottom: 200px;
 
     background-color: var(--overlay-bg-color);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero_bg.jpg);
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -349,6 +349,8 @@ a[title] {
     background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 4px;
+    /*outline: 1px solid black;*/
 
 
 }
@@ -476,6 +478,7 @@ background-image: url('../images/antenna.svg');
     justify-content: center;
     border: 1 px solid var(--passive-link-color);
     border-radius: 4px;
+    /*outline: 1px solid black;*/
     
 }
 
